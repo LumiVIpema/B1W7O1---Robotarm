@@ -1,0 +1,79 @@
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./robot-arm.js"></script>
+        <script>
+        // Robotarm bibliotheek inladen
+        var canvas = document.getElementById("canvas");
+        var robotArm = new RobotArm(canvas);
+
+  robotArm.loadLevel("exercise 6");
+
+  // Je eigen code plaats je hier.
+  for (var i=0; i<7; i++){
+  robotArm.moveRight();
+  } 
+  robotArm.grab();
+  robotArm.moveRight();
+  robotArm.drop();
+
+    for (var i=0; i<2; i++){
+    robotArm.moveLeft();
+    } 
+    robotArm.grab();
+
+      for (var i=0; i<1; i++){
+      robotArm.moveRight();
+      } 
+      robotArm.drop();
+
+          for (var i=0; i<2; i++){
+          robotArm.moveLeft();
+          } 
+          robotArm.grab();
+            for (var i=0; i<1; i++){
+            robotArm.moveRight();
+            } 
+            robotArm.drop();
+
+              for (var i=0; i<3; i++){
+              robotArm.moveLeft();
+              } 
+              robotArm.grab();
+                for (var i=0; i<2; i++){
+                robotArm.moveRight();
+                } 
+                robotArm.drop();
+
+                  for (var i=0; i<3; i++){
+                  robotArm.moveLeft();
+                  } 
+                  robotArm.grab();
+                    for (var i=0; i<1; i++){
+                    robotArm.moveRight();
+                    } 
+                    robotArm.drop();
+
+                        for (var i=0; i<2; i++){
+                        robotArm.moveLeft();
+                        } 
+                        robotArm.grab();
+                          for (var i=0; i<1; i++){
+                          robotArm.moveRight();
+                          } 
+                          robotArm.drop();
+
+                            for (var i=0; i<3; i++){
+                            robotArm.moveLeft();
+                            }
+                            robotArm.grab();
+                              for (var i=0; i<1; i++){
+                              robotArm.moveRight();
+                              } 
+                              robotArm.drop();
+
+
+  robotArm.run();
+</script>
+    </body>
+</html>
