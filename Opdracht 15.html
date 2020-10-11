@@ -12,8 +12,8 @@
 
   var right = 9;
             for(a=1;a<=9;a++){
-                robotArm.grab();
-                color = robotArm.scan();
+            robotArm.grab();
+            color = robotArm.scan();
             if(color == "red"){
             for(b=1;b<=right;b++){
             robotArm.moveRight();

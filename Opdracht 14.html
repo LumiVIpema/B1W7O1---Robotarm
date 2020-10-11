@@ -11,17 +11,18 @@
             for(a=1;a<=9;a++){
                 robotArm.moveRight();
             }
-            for(a=1;a<=9;a++){
+            	for(a=1;a<=9;a++){
                 robotArm.grab();
                 color = robotArm.scan();
                 if(color == "white"){
                     robotArm.moveRight();
                     robotArm.drop();
                     robotArm.moveLeft(); 
-                }else {
+
+                	}else {
                     robotArm.drop();
-                }
-                robotArm.moveLeft();   
+                	}
+               	 	robotArm.moveLeft();   
             }
 
         
